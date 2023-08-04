@@ -47,11 +47,12 @@ btn.addEventListener('click', () => {
       case 'Clouds':
         img.src = "images/cloud.png";
         break;
-      case 'Haze':
+      case 'Mist':
         img.src = "images/mist.png";
         break;
       default:
         img.src = "";
+        break;
     }
     temp.innerHTML = `${Math.round(data.main.temp)}°C`;
     weather.innerHTML = data.weather[0].main;
@@ -60,8 +61,8 @@ btn.addEventListener('click', () => {
 
     console.log(weatherDetails.style.display)
     console.log(weatherBox.style.display)
-    weatherBox.style.display = 'block';
-    weatherDetails.style.display = 'block';
+    weatherBox.style.display = '';
+    weatherDetails.style.display = '';
     weatherBox.classList.add("fade-in");
     weatherDetails.classList.add("fade-in");
     container.style.height = '500px';

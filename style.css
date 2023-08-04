@@ -79,7 +79,7 @@ body {
 }
 
 .weather-box img {
-  width: 60%;
+  width: 40%;
   margin-top: 30px;
 }
 
@@ -107,31 +107,31 @@ body {
 
 .weather-details {
   margin-top: 30px;
-  scale: 0;
-  opacity: 0;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  /*flex-direction: column;*/
 }
 
 .weather-details #humidity, .weather-details #wind {
   display: flex;
   align-items: center;
   width: 50%;
-  height: 100px;
+  /*height: 100px;*/
 }
 
 .weather-details #humidity {
   justify-content: flex-start;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 .weather-details #wind {
   justify-content: flex-end;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
 }
 
 .weather-details i {
-  font-size: 30px;
+  font-size: 25px;
   margin-right: 10px;
   color: #06283D;
   margin-top: 6px;
@@ -139,7 +139,7 @@ body {
 
 .weather-details span {
   color: #06283D;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 500;
 }
 
